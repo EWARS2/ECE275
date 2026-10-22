@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity RCA is
+	port(A, B : in std_logic_vector(3 downto 0);
+			Sum, Cout : out std_logic_vector(4 downto 0));
+end
+
+
+entity RCA is 
+
+	component HA is
+		port(A, B : in std_logic_vector(3 downto 0);
+				Sum, Cout : out std_logic_vector(4 downto 0));
+	end
+
+
+	component FA is
+		port(A, B, Cin : in std_logic;
+				Sum, Cout : out std_logic);
+	end component;
+	signal c : std_logic_vector()

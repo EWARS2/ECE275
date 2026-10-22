@@ -1,0 +1,167 @@
+|Lab4
+A[0] => P.IN0
+A[0] => PP[4].IN0
+A[0] => PP[8].IN0
+A[0] => PP[12].IN0
+A[1] => PP[1].IN0
+A[1] => PP[5].IN0
+A[1] => PP[9].IN0
+A[1] => PP[13].IN0
+A[2] => PP[2].IN0
+A[2] => PP[6].IN0
+A[2] => PP[10].IN0
+A[2] => PP[14].IN0
+A[3] => PP[3].IN0
+A[3] => PP[7].IN0
+A[3] => PP[11].IN0
+A[3] => PP[15].IN0
+B[0] => P.IN1
+B[0] => PP[1].IN1
+B[0] => PP[2].IN1
+B[0] => PP[3].IN1
+B[1] => PP[4].IN1
+B[1] => PP[5].IN1
+B[1] => PP[6].IN1
+B[1] => PP[7].IN1
+B[2] => PP[8].IN1
+B[2] => PP[9].IN1
+B[2] => PP[10].IN1
+B[2] => PP[11].IN1
+B[3] => PP[12].IN1
+B[3] => PP[13].IN1
+B[3] => PP[14].IN1
+B[3] => PP[15].IN1
+P[0] <= P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= HA:stage0_0.Sum
+P[2] <= HA:stage1_0.Sum
+P[3] <= HA:stage2_0.Sum
+P[4] <= FA:stage2_1.Sum
+P[5] <= FA:stage2_2.Sum
+P[6] <= FA:stage2_3.Sum
+P[7] <= FA:stage2_3.Cout
+
+
+|Lab4|HA:stage0_0
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage0_1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage0_2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|HA:stage0_3
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|HA:stage1_0
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage1_1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage1_2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage1_3
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|HA:stage2_0
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage2_1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage2_2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|FA:stage2_3
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

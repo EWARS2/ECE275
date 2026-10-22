@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Lab4 is
+    port(A, B : in  std_logic_vector(3 downto 0);
+         P : out std_logic_vector(7 downto 0));
+end;
+
+architecture arch of Lab4 is
+
+    component HA is
+        port(
+            A, B      : in std_logic;
+            Sum, Cout : out std_logic
+        );
+    end component;
+
+    component FA is
+        port(
+            A, B, Cin : in std_logic;
+            Sum, Cout : out std_logic
+        );
+    end component;
+
+    signal C0, C1 : std_logic_vector(3 downto 0);
+    signal C2, S0, S1 : std_logic_vector(2 downto 0);
+	 signal PP : std_logic_vector(15 downto 0);
+
+begin
+	 
+
+	 
+
+end architecture;

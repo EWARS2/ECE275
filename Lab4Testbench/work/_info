@@ -1,0 +1,261 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Efa
+Z0 w1790873523
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 25
+Z3 dC:/Users/Admin/Downloads/Lab4Testbench
+Z4 8C:/Users/Admin/Downloads/Lab4/FA.vhd
+Z5 FC:/Users/Admin/Downloads/Lab4/FA.vhd
+l0
+L4 1
+V:R8IGJPLYIVa[;9>6N7=E0
+!s100 <diA>?McWeUh;EOP?W1ih1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1791480236
+!i10b 1
+Z8 !s108 1791480236.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab4/FA.vhd|
+Z10 !s107 C:/Users/Admin/Downloads/Lab4/FA.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R1
+R2
+DEx4 work 2 fa 0 22 :R8IGJPLYIVa[;9>6N7=E0
+!i122 25
+l10
+L9 5
+V2MLV46<1N_oM[Fk>eZ??S1
+!s100 4iG:0XN2L_QK9=PU3Od[V2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eha
+Z13 w1790874086
+R1
+R2
+!i122 24
+R3
+Z14 8C:/Users/Admin/Downloads/Lab4/HA.vhd
+Z15 FC:/Users/Admin/Downloads/Lab4/HA.vhd
+l0
+L4 1
+VNL@DE99k7oo]HVhF`E^Ie0
+!s100 f]6VRJm]R<_z1?zQVZHEW3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab4/HA.vhd|
+Z17 !s107 C:/Users/Admin/Downloads/Lab4/HA.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 2 ha 0 22 NL@DE99k7oo]HVhF`E^Ie0
+!i122 24
+l10
+L9 5
+VGOh<g]ggEnQ`S[zD84AfF2
+!s100 HX]8`eJA<OAE`2RMTId?O2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Elab4
+Z18 w1792084135
+R1
+R2
+!i122 40
+R3
+Z19 8C:/Users/Admin/Downloads/Lab4/Lab4.vhd
+Z20 FC:/Users/Admin/Downloads/Lab4/Lab4.vhd
+l0
+L4 1
+VPdS^zf1U_g^Sob:Abd<4^3
+!s100 Ob74;DmS]G_nZ_eU]gb?a0
+R6
+32
+Z21 !s110 1792084144
+!i10b 1
+Z22 !s108 1792084144.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab4/Lab4.vhd|
+Z24 !s107 C:/Users/Admin/Downloads/Lab4/Lab4.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+Z25 DEx4 work 4 lab4 0 22 PdS^zf1U_g^Sob:Abd<4^3
+!i122 40
+l29
+Z26 L9 63
+Vi^6MlNG:3lcPb_dCO;jBW2
+!s100 _VF19Cf_d0`GTb1Z;Jj=X2
+R6
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Erca
+Z27 w1791479094
+R1
+R2
+!i122 19
+R3
+Z28 8C:/Users/Admin/Downloads/Lab4/RCA.vhd
+Z29 FC:/Users/Admin/Downloads/Lab4/RCA.vhd
+l0
+L4 1
+V:7;Q299<28VYoekBZojd]3
+!s100 TLom6]R0SS5CmG:[Q3@aW1
+R6
+32
+Z30 !s110 1791479633
+!i10b 1
+Z31 !s108 1791479633.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab4/RCA.vhd|
+Z33 !s107 C:/Users/Admin/Downloads/Lab4/RCA.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 3 rca 0 22 :7;Q299<28VYoekBZojd]3
+!i122 19
+l28
+L9 29
+Vo>iKVXlVhB>=0l7KDlfJ;2
+!s100 aK0KB:@X_n;Ef28M4@CcX3
+R6
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Erca_testbench
+Z34 w1792083538
+Z35 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 37
+R3
+Z36 8C:/Users/Admin/Downloads/Lab4Testbench/testbench.vhd
+Z37 FC:/Users/Admin/Downloads/Lab4Testbench/testbench.vhd
+l0
+L5 1
+VO3AWAoBK`e;Q_zIIQ`Ii;3
+!s100 W41f:MQLNghXRj?nhaWTS0
+R6
+32
+Z38 !s110 1792083583
+!i10b 1
+Z39 !s108 1792083582.000000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab4Testbench/testbench.vhd|
+Z41 !s107 C:/Users/Admin/Downloads/Lab4Testbench/testbench.vhd|
+!i113 1
+R11
+R12
+Aarch
+R35
+R1
+R2
+DEx4 work 13 rca_testbench 0 22 O3AWAoBK`e;Q_zIIQ`Ii;3
+!i122 37
+l18
+Z42 L8 39
+VEOB^BGROZ5UFkGd@H^3VV0
+!s100 P1QVXJ^05OX3:GmN0SLIj3
+R6
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R11
+R12
+Etestbench
+Z43 w1792083615
+R35
+R1
+R2
+!i122 38
+R3
+R36
+R37
+l0
+L5 1
+VYGfRmOV_`^Mk710_3ma=;3
+!s100 RU0l?QXG2RXj1MCkh[gFd2
+R6
+32
+Z44 !s110 1792083624
+!i10b 1
+Z45 !s108 1792083624.000000
+R40
+R41
+!i113 1
+R11
+R12
+Aarch
+R35
+R1
+R2
+DEx4 work 9 testbench 0 22 YGfRmOV_`^Mk710_3ma=;3
+!i122 38
+l18
+R42
+VaWUc4ee:Gf[>Cg:43Uc5l2
+!s100 2MhVZgG0N?LM^0hlLfH<F1
+R6
+32
+R44
+!i10b 1
+R45
+R40
+R41
+!i113 1
+R11
+R12

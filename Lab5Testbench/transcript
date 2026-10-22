@@ -1,0 +1,122 @@
+# Compile of Lab5.vhd was successful.
+# Compile of Lab5Testbench.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Lab5.vhd was successful.
+# Compile of Lab5Testbench.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.lab5testbench
+# vsim work.lab5testbench 
+# Start time: 11:55:37 on Oct 22,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lab5testbench(arch)
+# Loading work.lab5(arch)
+add wave -position insertpoint  \
+sim:/lab5testbench/I \
+sim:/lab5testbench/A \
+sim:/lab5testbench/B \
+sim:/lab5testbench/C \
+sim:/lab5testbench/D \
+sim:/lab5testbench/E \
+sim:/lab5testbench/F \
+sim:/lab5testbench/G
+run
+# ** Error: Incorrect output for input 1, expected '1''0''0''1''1''1''1'
+#    Time: 20 ns  Iteration: 0  Instance: /lab5testbench
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 7 (6 downto 0). Right is 8 (6 downto -1).
+#    Time: 110 ns  Iteration: 0  Process: /lab5testbench/inputs File: C:/Users/Admin/Downloads/Lab5Testbench/Lab5Testbench.vhd
+# Fatal error in ForLoop loop at C:/Users/Admin/Downloads/Lab5Testbench/Lab5Testbench.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Admin/Downloads/Lab5Testbench/Lab5Testbench.vhd 45 ForLoop loop
+# 
+# Compile of Lab5Testbench.vhd was successful with warnings.
+# Compile of Lab5Testbench.vhd was successful.
+vsim work.lab5testbench
+# End time: 11:57:32 on Oct 22,2026, Elapsed time: 0:01:55
+# Errors: 2, Warnings: 9
+# vsim work.lab5testbench 
+# Start time: 11:57:32 on Oct 22,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lab5testbench(arch)
+# Loading work.lab5(arch)
+add wave -position insertpoint  \
+sim:/lab5testbench/I \
+sim:/lab5testbench/A \
+sim:/lab5testbench/B \
+sim:/lab5testbench/C \
+sim:/lab5testbench/D \
+sim:/lab5testbench/E \
+sim:/lab5testbench/F \
+sim:/lab5testbench/G
+run
+# ** Error: Incorrect output for input 1, expected '1''0''0''1''1''1''1'
+#    Time: 20 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 10, expected 'X''X''X''X''X''X''X'
+#    Time: 110 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 11, expected 'X''X''X''X''X''X''X'
+#    Time: 120 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 12, expected 'X''X''X''X''X''X''X'
+#    Time: 130 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 13, expected 'X''X''X''X''X''X''X'
+#    Time: 140 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 14, expected 'X''X''X''X''X''X''X'
+#    Time: 150 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 15, expected 'X''X''X''X''X''X''X'
+#    Time: 160 ns  Iteration: 0  Instance: /lab5testbench
+# ** Note: Tests finished
+#    Time: 160 ns  Iteration: 0  Instance: /lab5testbench
+# Compile of Lab5.vhd was successful.
+vsim work.lab5testbench
+# End time: 12:02:01 on Oct 22,2026, Elapsed time: 0:04:29
+# Errors: 7, Warnings: 2
+# vsim work.lab5testbench 
+# Start time: 12:02:01 on Oct 22,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lab5testbench(arch)
+# Loading work.lab5(arch)
+vsim work.lab5testbench
+# End time: 12:02:25 on Oct 22,2026, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 1
+# vsim work.lab5testbench 
+# Start time: 12:02:25 on Oct 22,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lab5testbench(arch)
+# Loading work.lab5(arch)
+add wave -position insertpoint  \
+sim:/lab5testbench/I \
+sim:/lab5testbench/A \
+sim:/lab5testbench/B \
+sim:/lab5testbench/C \
+sim:/lab5testbench/D \
+sim:/lab5testbench/E \
+sim:/lab5testbench/F \
+sim:/lab5testbench/G
+run
+# ** Error: Incorrect output for input 10, expected 'X''X''X''X''X''X''X'
+#    Time: 110 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 11, expected 'X''X''X''X''X''X''X'
+#    Time: 120 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 12, expected 'X''X''X''X''X''X''X'
+#    Time: 130 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 13, expected 'X''X''X''X''X''X''X'
+#    Time: 140 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 14, expected 'X''X''X''X''X''X''X'
+#    Time: 150 ns  Iteration: 0  Instance: /lab5testbench
+# ** Error: Incorrect output for input 15, expected 'X''X''X''X''X''X''X'
+#    Time: 160 ns  Iteration: 0  Instance: /lab5testbench
+# ** Note: Tests finished
+#    Time: 160 ns  Iteration: 0  Instance: /lab5testbench
+# End time: 12:03:34 on Oct 22,2026, Elapsed time: 0:01:09
+# Errors: 6, Warnings: 1

@@ -1,0 +1,36 @@
+# Compile of Lab3.vhd was successful.
+# Compile of testbench.vhd failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of testbench.vhd failed with 7 errors.
+# Compile of testbench.vhd failed with 3 errors.
+# Compile of testbench.vhd failed with 3 errors.
+# Compile of testbench.vhd failed with 4 errors.
+# Compile of testbench.vhd failed with 3 errors.
+# Compile of testbench.vhd failed with 3 errors.
+# Compile of testbench.vhd failed with 1 errors.
+# Compile of testbench.vhd failed with 1 errors.
+# Compile of testbench.vhd was successful.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 13:17:40 on Sep 17,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(arch)
+# Loading work.lab3(dataflow)
+add wave -position insertpoint  \
+sim:/testbench/A \
+sim:/testbench/B \
+sim:/testbench/C \
+sim:/testbench/D \
+sim:/testbench/F1 \
+sim:/testbench/F2 \
+sim:/testbench/F3 \
+sim:/testbench/F4
+run
+run
+run
+run
+# End time: 13:19:32 on Sep 17,2026, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 15

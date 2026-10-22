@@ -1,0 +1,7 @@
+|comb_logic
+A => temp_AB.IN0
+B => temp_AB.IN1
+C => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

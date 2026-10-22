@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Ecomb_logic
+Z0 w1789663895
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+Z3 dC:/Users/Admin/Downloads
+Z4 8C:/Users/Admin/Downloads/comb_logic/comb_logic.vhd
+Z5 FC:/Users/Admin/Downloads/comb_logic/comb_logic.vhd
+l0
+L4 1
+VZDif3j9b^bh<_7Idi5@0o1
+!s100 N>6HHUlJ]:1XYH9cV3_Di1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1789664959
+!i10b 1
+Z8 !s108 1789664959.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/comb_logic/comb_logic.vhd|
+Z10 !s107 C:/Users/Admin/Downloads/comb_logic/comb_logic.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R1
+R2
+DEx4 work 10 comb_logic 0 22 ZDif3j9b^bh<_7Idi5@0o1
+!i122 3
+l11
+L9 6
+V>[>zQDZ4m2idXS3V`QO;42
+!s100 n4oPmiAUQmAZX9778f[ha3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elab3
+Z13 w1789666928
+R1
+R2
+!i122 8
+R3
+Z14 8C:/Users/Admin/Downloads/Lab3/Lab3.vhd
+Z15 FC:/Users/Admin/Downloads/Lab3/Lab3.vhd
+l0
+L4 1
+VV7B=JQ@k_K=gMcbdglgLY2
+!s100 :a8m_^bCfj9nL7UMmG<Tj3
+R6
+32
+Z16 !s110 1789667348
+!i10b 1
+Z17 !s108 1789667347.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/Lab3/Lab3.vhd|
+Z19 !s107 C:/Users/Admin/Downloads/Lab3/Lab3.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 4 lab3 0 22 V7B=JQ@k_K=gMcbdglgLY2
+!i122 8
+l11
+L9 8
+VezQWnT;=1AUI7n6J5Z<>]0
+!s100 2<iI5D`jznSXO[Z5c?jk;3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench
+Z20 w1789668985
+Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 18
+R3
+Z22 8C:/Users/Admin/Downloads/testbench.vhd
+Z23 FC:/Users/Admin/Downloads/testbench.vhd
+l0
+L5 1
+VYGfRmOV_`^Mk710_3ma=;3
+!s100 RU0l?QXG2RXj1MCkh[gFd2
+R6
+32
+Z24 !s110 1789668991
+!i10b 1
+Z25 !s108 1789668991.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Downloads/testbench.vhd|
+Z27 !s107 C:/Users/Admin/Downloads/testbench.vhd|
+!i113 1
+R11
+R12
+Aarch
+R21
+R1
+R2
+Z28 DEx4 work 9 testbench 0 22 YGfRmOV_`^Mk710_3ma=;3
+!i122 18
+l16
+L8 25
+V=94fLNTMHeaIaUcEQddgi3
+!s100 Yl8Ze;IY^jcLnd=zc1XLG2
+R6
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+R12
