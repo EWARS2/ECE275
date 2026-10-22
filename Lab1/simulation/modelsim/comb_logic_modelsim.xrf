@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ethan.t.reed/Downloads/Lab1/comb_logic_old.bdf
+source_file = 1, C:/Users/ethan.t.reed/Downloads/Lab1/comb_logic.vhd
+source_file = 1, C:/Users/ethan.t.reed/Downloads/Lab1/db/comb_logic.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = comb_logic
+instance = comp, \F~output\, F~output, comb_logic, 1
+instance = comp, \X2~input\, X2~input, comb_logic, 1
+instance = comp, \X1~input\, X1~input, comb_logic, 1
+instance = comp, \F~0\, F~0, comb_logic, 1
