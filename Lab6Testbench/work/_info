@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,210 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/20.1
+Efa
+Z0 w1793290542
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 22
+Z3 dC:/Users/Admin/Documents/ECE275/Lab6Testbench
+Z4 8C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
+Z5 FC:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
+l0
+L4 1
+V:R8IGJPLYIVa[;9>6N7=E0
+!s100 <diA>?McWeUh;EOP?W1ih1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1793308849
+!i10b 1
+Z8 !s108 1793308849.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd|
+Z10 !s107 C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R1
+R2
+Z13 DEx4 work 2 fa 0 22 :R8IGJPLYIVa[;9>6N7=E0
+!i122 22
+l10
+L9 5
+Z14 V2MLV46<1N_oM[Fk>eZ??S1
+Z15 !s100 4iG:0XN2L_QK9=PU3Od[V2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elab6
+Z16 w1793295706
+R1
+R2
+!i122 18
+R3
+Z17 8C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd
+Z18 FC:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd
+l0
+L4 1
+VmgJRReE=D[GPD@e^OFHei1
+!s100 HJ>CL??2>hMgNDK:`UAZd2
+R6
+32
+Z19 !s110 1793308848
+!i10b 1
+Z20 !s108 1793308848.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd|
+Z22 !s107 C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 4 lab6 0 22 mgJRReE=D[GPD@e^OFHei1
+!i122 18
+l44
+L13 58
+VgTd@K@2?<hEaV^ZY3glRC2
+!s100 :ibSF^bVjHK7nVKhAjZ_[2
+R6
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R11
+R12
+Emux8to1
+Z23 w1793294040
+R1
+R2
+!i122 19
+R3
+Z24 8C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
+Z25 FC:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
+l0
+L4 1
+VGH07M1:P`<m1b8m7oIXH33
+!s100 6X6DXImLb^]2ejUITcj]V3
+R6
+32
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd|
+Z27 !s107 C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 7 mux8to1 0 22 GH07M1:P`<m1b8m7oIXH33
+!i122 19
+l14
+L13 13
+V9?;2XI=mF@^I[5>;E]S:X1
+!s100 kGJ`4l8dh5J9XMTf66cHk3
+R6
+32
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 1
+R11
+R12
+Erca
+Z28 w1793290599
+R1
+R2
+!i122 20
+R3
+Z29 8C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
+Z30 FC:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
+l0
+L4 1
+Va8>I1_3gbMRPgfNmPg2<_0
+!s100 c6ZaVa[8^7NPFH_YBIej_2
+R6
+32
+R19
+!i10b 1
+R20
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd|
+Z32 !s107 C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 3 rca 0 22 a8>I1_3gbMRPgfNmPg2<_0
+!i122 20
+l22
+L10 22
+VNdjJVhjNVQOzb5^;coL=W2
+!s100 ]Oc9AM]274Qc1b5Nfkh]Q3
+R6
+32
+R19
+!i10b 1
+R20
+R31
+R32
+!i113 1
+R11
+R12
+Etestbenchrca
+Z33 w1793308841
+Z34 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 21
+R3
+Z35 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+Z36 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+l0
+L5 1
+VO:JFe23naYO<JeCYz3W3Z2
+!s100 YGH9;:S>zeKDV0662GK9_3
+R6
+32
+R7
+!i10b 1
+R20
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
+Z38 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
+!i113 1
+R11
+R12
+Aarch
+R34
+R1
+R2
+DEx4 work 12 testbenchrca 0 22 O:JFe23naYO<JeCYz3W3Z2
+!i122 21
+l20
+L8 59
+V_^X8c?5@^<::=nZLTM3oz3
+!s100 mLAYZS`f2VnBkY98=1X7K0
+R6
+32
+R7
+!i10b 1
+R20
+R37
+R38
+!i113 1
+R11
+R12

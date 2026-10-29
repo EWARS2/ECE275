@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "10/29/2026 12:43:10"
+-- DATE "10/29/2026 16:14:04"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -80,9 +80,9 @@ ENTITY 	Lab6 IS
 	A : IN std_logic_vector(3 DOWNTO 0);
 	B : IN std_logic_vector(3 DOWNTO 0);
 	Opcode : IN std_logic_vector(2 DOWNTO 0);
-	F : OUT std_logic_vector(3 DOWNTO 0);
-	Cout : OUT std_logic;
-	Z : OUT std_logic
+	F : BUFFER std_logic_vector(3 DOWNTO 0);
+	Cout : BUFFER std_logic;
+	Z : BUFFER std_logic
 	);
 END Lab6;
 

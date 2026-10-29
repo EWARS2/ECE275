@@ -54,12 +54,12 @@ B[3] => RCA:stage6.B[3]
 Opcode[0] => MUX8to1:stage8.S[0]
 Opcode[1] => MUX8to1:stage8.S[1]
 Opcode[2] => MUX8to1:stage8.S[2]
-F[0] <= MUX8to1:stage8.Y[0]
-F[1] <= MUX8to1:stage8.Y[1]
-F[2] <= MUX8to1:stage8.Y[2]
-F[3] <= MUX8to1:stage8.Y[3]
-Cout <= MUX8to1:stage8.Y[4]
-Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+F[0] << MUX8to1:stage8.Y[0]
+F[1] << MUX8to1:stage8.Y[1]
+F[2] << MUX8to1:stage8.Y[2]
+F[3] << MUX8to1:stage8.Y[3]
+Cout << MUX8to1:stage8.Y[4]
+Z << Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Lab6|RCA:stage0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Thu Oct 29 12:42:30 2026
+Thu Oct 29 16:13:20 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 29 12:42:30 2026       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 29 16:13:20 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab6                                        ;
 ; Top-level Entity Name              ; Lab6                                        ;
@@ -334,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 29 12:41:50 2026
+    Info: Processing started: Thu Oct 29 16:12:31 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -362,9 +362,9 @@ Info (21057): Implemented 50 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 33 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 13250 megabytes
-    Info: Processing ended: Thu Oct 29 12:42:30 2026
-    Info: Elapsed time: 00:00:40
-    Info: Total CPU time (on all processors): 00:01:14
+    Info: Peak virtual memory: 13243 megabytes
+    Info: Processing ended: Thu Oct 29 16:13:20 2026
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:31
 
 
