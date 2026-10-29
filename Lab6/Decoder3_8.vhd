@@ -1,12 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Dec3_8 is
+entity Decoder3_8 is
     port(I : in  std_logic_vector(2 downto 0);
 			Y : out std_logic_vector(7 downto 0));
 end;
 
-architecture arch of Dec3_8 is
+architecture arch of Decoder3_8 is
 signal O : std_logic_vector(2 downto 0);
 begin
 	O <= not I;

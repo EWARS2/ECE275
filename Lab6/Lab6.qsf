@@ -64,4 +64,5 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE RCA.vhd
 set_global_assignment -name VHDL_FILE FA.vhd
 set_global_assignment -name VHDL_FILE Lab6.vhd
-set_global_assignment -name VHDL_FILE Dec3_8.vhd
+set_global_assignment -name VHDL_FILE Sub.vhd
+set_global_assignment -name VHDL_FILE Decoder3_8.vhd
