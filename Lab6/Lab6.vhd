@@ -40,14 +40,14 @@ architecture arch of Lab6 is
 begin
 	BB <= not B;
 
-	RCA port map(A, '1111', '0', Dec);
-	RCA port map(A, '0000', '1', Inc);
+	RCA port map(A, "1111", "0", Dec);
+	RCA port map(A, "0000", "1", Inc);
 	Not2 <= not A;
 	Or2 <= A or B;
 	XOR2 <= A xor B;
 	AND2 <= A and B;
-	RCA port map(A, BB, '1', Sub);
-	RCA port map(A, B, '0', Add);
+	RCA port map(A, BB, "1", Sub);
+	RCA port map(A, B, "0", Add);
 	
 	
    Mux8to1 port map(Opcode, Dec, Inc, Not2, Or2, Xor2, And2, Sub, Add, MuxOut);

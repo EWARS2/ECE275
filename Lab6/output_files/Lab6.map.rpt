@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Thu Oct 29 12:31:52 2026
+Thu Oct 29 12:33:01 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Oct 29 12:31:52 2026           ;
+; Analysis & Synthesis Status        ; Failed - Thu Oct 29 12:33:01 2026           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab6                                        ;
 ; Top-level Entity Name              ; Lab6                                        ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 29 12:30:59 2026
+    Info: Processing started: Thu Oct 29 12:32:23 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -172,17 +172,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file rca.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file fa.vhd
     Info (12022): Found design unit 1: FA-arch File: C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd Line: 9
     Info (12023): Found entity 1: FA File: C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd Line: 4
-Error (10500): VHDL syntax error at Lab6.vhd(8) near text ",";  expecting ";", or ")" File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 8
 Error (10500): VHDL syntax error at Lab6.vhd(43) near text "port";  expecting "(", or "'", or "." File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 43
 Error (10500): VHDL syntax error at Lab6.vhd(43) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 43
 Info (12021): Found 0 design units, including 0 entities, in source file lab6.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file mux8to1.vhd
     Info (12022): Found design unit 1: MUX8to1-arch File: C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd Line: 13
     Info (12023): Found entity 1: MUX8to1 File: C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd Line: 4
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 13228 megabytes
-    Error: Processing ended: Thu Oct 29 12:31:52 2026
-    Error: Elapsed time: 00:00:53
-    Error: Total CPU time (on all processors): 00:01:17
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 13225 megabytes
+    Error: Processing ended: Thu Oct 29 12:33:01 2026
+    Error: Elapsed time: 00:00:38
+    Error: Total CPU time (on all processors): 00:01:14
 
 
