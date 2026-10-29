@@ -1,0 +1,91 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity testbenchMUX is
+end;
+
+architecture arch of testbenchMUX is
+
+    component Mux8to1 is
+        port (
+        S   : in  std_logic_vector(2 downto 0);
+        I0, I1, I2, I3 : in std_logic_vector(4 downto 0);
+        I4, I5, I6, I7 : in std_logic_vector(4 downto 0);
+        Y   : out std_logic_vector(4 downto 0)
+    	);
+    end component;
+
+    signal S : std_logic_vector(2 downto 0);
+    signal I0, I1, I2, I3, I4, I5, I6, I7, Y : std_logic_vector(4 downto 0);
+
+begin
+
+    DUT: Mux8to1 port map(S, I0, I1, I2, I3, I4, I5, I6, I7, Y);
+
+    inputs: process
+    begin
+
+I0 <= "00000001";
+I1 <= "00000010";
+I2 <= "00000100";
+I3 <= "00001000";
+I4 <= "00010000";
+I5 <= "00100000";
+I6 <= "01000000";
+I7 <= "10000000";
+
+                S <= 0;
+                wait for 10 ns;
+                assert unsigned(Y) = I0
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 1;
+                wait for 10 ns;
+                assert unsigned(Y) = I1
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 2;
+                wait for 10 ns;
+                assert unsigned(Y) = I2
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 3;
+                wait for 10 ns;
+                assert unsigned(Y) = I3
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 4;
+                wait for 10 ns;
+                assert unsigned(Y) = I4
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 5;
+                wait for 10 ns;
+                assert unsigned(Y) = I5
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 6;
+                wait for 10 ns;
+                assert unsigned(Y) = I6
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+                S <= 7;
+                wait for 10 ns;
+                assert unsigned(Y) = I7
+                    report "Incorrect result " & integer'image(Y)
+                    severity error;
+
+        report "Tests finished" severity note;
+        wait;
+
+    end process;
+
+end;

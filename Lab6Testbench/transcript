@@ -6267,3 +6267,29 @@ sim:/testbenchrca/Sum
 run
 # ** Note: Tests finished
 #    Time: 5120 ns  Iteration: 0  Instance: /testbenchrca
+# Compile of Lab6.vhd was successful.
+# Compile of Mux8to1.vhd was successful.
+# Compile of RCA.vhd was successful.
+# Compile of testbenchRCA.vhd was successful.
+# Compile of testbenchMUX.vhd failed with 1 errors.
+# Compile of testbenchLab6.vhd failed with 1 errors.
+# Compile of FA.vhd was successful.
+# 7 compiles, 2 failed with 2 errors.
+# Compile of Lab6.vhd was successful.
+# Compile of Mux8to1.vhd was successful.
+# Compile of RCA.vhd was successful.
+# Compile of testbenchRCA.vhd was successful.
+# Compile of testbenchMUX.vhd failed with 40 errors.
+# Compile of testbenchLab6.vhd failed with 1 errors.
+# Compile of FA.vhd was successful.
+# 7 compiles, 2 failed with 41 errors.
+# Compile of Lab6.vhd was successful.
+# Compile of Mux8to1.vhd was successful.
+# Compile of RCA.vhd was successful.
+# Compile of testbenchRCA.vhd was successful.
+# Compile of testbenchMUX.vhd failed with 40 errors.
+# Compile of testbenchLab6.vhd failed with 1 errors.
+# Compile of FA.vhd was successful.
+# 7 compiles, 2 failed with 41 errors.
+# End time: 16:41:05 on Oct 29,2026, Elapsed time: 0:20:12
+# Errors: 0, Warnings: 4

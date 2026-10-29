@@ -11,6 +11,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package STANDARD
 ** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd(2): (vcom-1491) Empty source files.
 
+} {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbenchRCA
+-- Compiling architecture arch of testbenchRCA
+
 } {} {}} C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -30,9 +39,54 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 } {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
-** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbenchMUX
+-- Compiling architecture arch of testbenchMUX
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(38): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(40): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(40): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(41): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(44): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(46): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(46): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(47): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(50): Integer literal 2 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(52): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(52): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(53): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(56): Integer literal 3 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(58): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(58): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(59): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(62): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(64): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(64): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(65): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(68): Integer literal 5 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(70): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(70): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(71): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(74): Integer literal 6 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(76): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(76): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(77): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(80): Integer literal 7 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(82): (vcom-1581) No feasible entries for infix operator '='.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(82): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(83): Signal "Y" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(29): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(30): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(31): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(32): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(33): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(34): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(35): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Error (suppressible): C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(36): (vcom-1272) Length of expected is 5; length of actual is 8.
+** Note: C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd(91): VHDL Compiler exiting
 
-} {} {}} C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
+} {9.0 41.0} {}} C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO

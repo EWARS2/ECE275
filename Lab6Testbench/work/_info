@@ -13,7 +13,7 @@ Efa
 Z0 w1793290542
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 22
+!i122 39
 Z3 dC:/Users/Admin/Documents/ECE275/Lab6Testbench
 Z4 8C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
 Z5 FC:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
@@ -23,9 +23,9 @@ V:R8IGJPLYIVa[;9>6N7=E0
 !s100 <diA>?McWeUh;EOP?W1ih1
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1793308849
+Z7 !s110 1793310042
 !i10b 1
-Z8 !s108 1793308849.000000
+Z8 !s108 1793310042.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd|
 Z10 !s107 C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Aarch
 R1
 R2
 Z13 DEx4 work 2 fa 0 22 :R8IGJPLYIVa[;9>6N7=E0
-!i122 22
+!i122 39
 l10
 L9 5
 Z14 V2MLV46<1N_oM[Fk>eZ??S1
@@ -54,7 +54,7 @@ Elab6
 Z16 w1793295706
 R1
 R2
-!i122 18
+!i122 34
 R3
 Z17 8C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd
 Z18 FC:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd
@@ -64,9 +64,9 @@ VmgJRReE=D[GPD@e^OFHei1
 !s100 HJ>CL??2>hMgNDK:`UAZd2
 R6
 32
-Z19 !s110 1793308848
+Z19 !s110 1793310041
 !i10b 1
-Z20 !s108 1793308848.000000
+Z20 !s108 1793310041.000000
 Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd|
 Z22 !s107 C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd|
 !i113 1
@@ -76,7 +76,7 @@ Aarch
 R1
 R2
 DEx4 work 4 lab6 0 22 mgJRReE=D[GPD@e^OFHei1
-!i122 18
+!i122 34
 l44
 L13 58
 VgTd@K@2?<hEaV^ZY3glRC2
@@ -95,7 +95,7 @@ Emux8to1
 Z23 w1793294040
 R1
 R2
-!i122 19
+!i122 35
 R3
 Z24 8C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
 Z25 FC:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
@@ -117,7 +117,7 @@ Aarch
 R1
 R2
 DEx4 work 7 mux8to1 0 22 GH07M1:P`<m1b8m7oIXH33
-!i122 19
+!i122 35
 l14
 L13 13
 V9?;2XI=mF@^I[5>;E]S:X1
@@ -136,7 +136,7 @@ Erca
 Z28 w1793290599
 R1
 R2
-!i122 20
+!i122 36
 R3
 Z29 8C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
 Z30 FC:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
@@ -146,7 +146,7 @@ Va8>I1_3gbMRPgfNmPg2<_0
 !s100 c6ZaVa[8^7NPFH_YBIej_2
 R6
 32
-R19
+R7
 !i10b 1
 R20
 Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd|
@@ -158,14 +158,14 @@ Aarch
 R1
 R2
 DEx4 work 3 rca 0 22 a8>I1_3gbMRPgfNmPg2<_0
-!i122 20
+!i122 36
 l22
 L10 22
 VNdjJVhjNVQOzb5^;coL=W2
 !s100 ]Oc9AM]274Qc1b5Nfkh]Q3
 R6
 32
-R19
+R7
 !i10b 1
 R20
 R31
@@ -173,12 +173,35 @@ R32
 !i113 1
 R11
 R12
-Etestbenchrca
-Z33 w1793308841
-Z34 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Etestbenchmux
+w1793309811
+Z33 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 21
+!i122 38
+R3
+8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
+FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
+l0
+L5 1
+VNQCUFUA_cg<Eo[S3DRf202
+!s100 a8zDYDiW:keNUl9gjhHWj1
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
+!s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
+!i113 1
+R11
+R12
+Etestbenchrca
+Z34 w1793308841
+R33
+R1
+R2
+!i122 37
 R3
 Z35 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
 Z36 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
@@ -190,18 +213,18 @@ R6
 32
 R7
 !i10b 1
-R20
+R8
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
 Z38 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
 !i113 1
 R11
 R12
 Aarch
-R34
+R33
 R1
 R2
 DEx4 work 12 testbenchrca 0 22 O:JFe23naYO<JeCYz3W3Z2
-!i122 21
+!i122 37
 l20
 L8 59
 V_^X8c?5@^<::=nZLTM3oz3
@@ -210,7 +233,7 @@ R6
 32
 R7
 !i10b 1
-R20
+R8
 R37
 R38
 !i113 1
