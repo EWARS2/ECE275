@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity Lab6 is
     port(A, B : in  std_logic_vector(3 downto 0);
 			Opcode : in std_logic_vector(2 downto 0);
-         F : out std_logic_vector(3 downto 0)
+         F : out std_logic_vector(3 downto 0);
 			Cout, Z : out std_logic);
 end;
 

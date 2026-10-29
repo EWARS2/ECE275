@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Thu Oct 29 11:19:17 2026
+Thu Oct 29 12:31:52 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 29 11:19:17 2026       ;
+; Analysis & Synthesis Status        ; Failed - Thu Oct 29 12:31:52 2026           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab6                                        ;
 ; Top-level Entity Name              ; Lab6                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -162,108 +156,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                  ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
-; FA.vhd                           ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd   ;         ;
-; Lab6.vhd                         ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
-
-
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 8                ;
-;                                             ;                  ;
-; Total combinational functions               ; 8                ;
-; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 0                ;
-;     -- 3 input functions                    ; 8                ;
-;     -- <=2 input functions                  ; 0                ;
-;                                             ;                  ;
-; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 8                ;
-;     -- arithmetic mode                      ; 0                ;
-;                                             ;                  ;
-; Total registers                             ; 0                ;
-;     -- Dedicated logic registers            ; 0                ;
-;     -- I/O registers                        ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 14               ;
-;                                             ;                  ;
-; Embedded Multiplier 9-bit elements          ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; FA:stage0|Cout~0 ;
-; Maximum fan-out                             ; 2                ;
-; Total fan-out                               ; 43               ;
-; Average fan-out                             ; 1.19             ;
-+---------------------------------------------+------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Lab6                      ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Lab6               ; Lab6        ; work         ;
-;    |FA:stage0|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab6|FA:stage0     ; FA          ; work         ;
-;    |FA:stage1|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab6|FA:stage1     ; FA          ; work         ;
-;    |FA:stage2|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab6|FA:stage2     ; FA          ; work         ;
-;    |FA:stage3|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab6|FA:stage3     ; FA          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_lcell_comb ; 8                           ;
-;     normal            ; 8                           ;
-;         3 data inputs ; 8                           ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.94                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 29 11:18:38 2026
+    Info: Processing started: Thu Oct 29 12:30:59 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -273,22 +172,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file rca.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file fa.vhd
     Info (12022): Found design unit 1: FA-arch File: C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd Line: 9
     Info (12023): Found entity 1: FA File: C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file lab6.vhd
-    Info (12022): Found design unit 1: Lab6-arch File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 10
-    Info (12023): Found entity 1: Lab6 File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 4
-Info (12127): Elaborating entity "Lab6" for the top level hierarchy
-Info (12128): Elaborating entity "FA" for hierarchy "FA:stage0" File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 24
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 13255 megabytes
-    Info: Processing ended: Thu Oct 29 11:19:17 2026
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:15
+Error (10500): VHDL syntax error at Lab6.vhd(8) near text ",";  expecting ";", or ")" File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 8
+Error (10500): VHDL syntax error at Lab6.vhd(43) near text "port";  expecting "(", or "'", or "." File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 43
+Error (10500): VHDL syntax error at Lab6.vhd(43) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd Line: 43
+Info (12021): Found 0 design units, including 0 entities, in source file lab6.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file mux8to1.vhd
+    Info (12022): Found design unit 1: MUX8to1-arch File: C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd Line: 13
+    Info (12023): Found entity 1: MUX8to1 File: C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd Line: 4
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 13228 megabytes
+    Error: Processing ended: Thu Oct 29 12:31:52 2026
+    Error: Elapsed time: 00:00:53
+    Error: Total CPU time (on all processors): 00:01:17
 
 
