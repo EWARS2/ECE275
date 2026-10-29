@@ -3,9 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity Sub is
     port(A, B : in  std_logic_vector(3 downto 0);
-			Opcode : in std_logic_vector(2 downto 0);
-         F : out std_logic_vector(3 downto 0)
-			Cout, Z : out std_logic);
+         F : out std_logic_vector(4 downto 0)
 end;
 
 architecture arch of Sub is
@@ -16,8 +14,10 @@ architecture arch of Sub is
          Sum : out std_logic_vector(4 downto 0));
     end component;
 
+	 signal BB : std_logic_vector(3 downto 0);
+	 
 begin
-
-	
+	BB <= not B;
+	RCA port map(A, BB, '1', F);
 
 end architecture;
