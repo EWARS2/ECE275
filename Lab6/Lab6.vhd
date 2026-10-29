@@ -40,17 +40,17 @@ architecture arch of Lab6 is
 begin
 	BB <= not B;
 
-	RCA port map(A, "1111", "0", Dec);
-	RCA port map(A, "0000", "1", Inc);
+	stage0: RCA port map(A, "1111", "0", Dec);
+	stage1: RCA port map(A, "0000", "1", Inc);
 	Not2 <= not A;
 	Or2 <= A or B;
 	XOR2 <= A xor B;
 	AND2 <= A and B;
-	RCA port map(A, BB, "1", Sub);
-	RCA port map(A, B, "0", Add);
+	stage6: RCA port map(A, BB, "1", Sub);
+	stage7: RCA port map(A, B, "0", Add);
 	
 	
-   Mux8to1 port map(Opcode, Dec, Inc, Not2, Or2, Xor2, And2, Sub, Add, MuxOut);
+   stage8: Mux8to1 port map(Opcode, Dec, Inc, Not2, Or2, Xor2, And2, Sub, Add, MuxOut);
 	
 	F <= Muxout(3 downto 0);
 	Cout <= MuxOut(4);
