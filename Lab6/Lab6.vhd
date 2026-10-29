@@ -50,7 +50,7 @@ begin
 	RCA port map(A, B, '0', Add);
 	
 	
-   Mux8to1 port map(S, Dec, Inc, Not2, Or2, Xor2, And2, Sub, Add, MuxOut);
+   Mux8to1 port map(Opcode, Dec, Inc, Not2, Or2, Xor2, And2, Sub, Add, MuxOut);
 	
 	F <= Muxout(3 downto 0);
 	Cout <= MuxOut(4);
