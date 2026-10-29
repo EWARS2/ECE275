@@ -17,5 +17,5 @@ begin
 	Y(4) <= I(2) and O(1) and O(0);
 	Y(5) <= I(2) and O(1) and I(0);
 	Y(6) <= I(2) and I(1) and O(0);
-	Y(7) <= I(2) and I(1) and I(0);	
+	Y(7) <= I(2) and I(1) and I(0);
 end architecture;
