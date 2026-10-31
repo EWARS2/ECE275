@@ -1,51 +1,31 @@
-# Compile of testbenchMUX.vhd was successful.
-# Compile of Lab6.vhd was successful.
-# Compile of Mux8to1.vhd was successful.
-# Compile of RCA.vhd was successful.
-# Compile of testbenchRCA.vhd was successful.
-# Compile of testbenchMUX.vhd failed with 8 errors.
-# Compile of testbenchLab6.vhd failed with 1 errors.
-# Compile of FA.vhd was successful.
-# 7 compiles, 2 failed with 9 errors.
-# Compile of Lab6.vhd was successful.
-# Compile of Mux8to1.vhd was successful.
-# Compile of RCA.vhd was successful.
-# Compile of testbenchRCA.vhd was successful.
-# Compile of testbenchMUX.vhd was successful.
-# Compile of testbenchLab6.vhd failed with 1 errors.
-# Compile of FA.vhd was successful.
-# 7 compiles, 1 failed with 1 error.
-vsim work.testbenchmux
-# vsim work.testbenchmux 
-# Start time: 13:26:36 on Oct 31,2026
+# Compile of testbenchLab6.vhd failed with 16 errors.
+# Compile of testbenchLab6.vhd failed with 16 errors.
+# Compile of testbenchLab6.vhd failed with 9 errors.
+# Compile of testbenchLab6.vhd failed with 8 errors.
+# Compile of testbenchLab6.vhd failed with 8 errors.
+# Compile of testbenchLab6.vhd failed with 11 errors.
+# Compile of testbenchLab6.vhd was successful.
+vsim work.testbenchlab6
+# vsim work.testbenchlab6 
+# Start time: 14:21:26 on Oct 31,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.testbenchmux(arch)
+# Loading work.testbenchlab6(arch)
+# Loading work.lab6(arch)
+# Loading work.rca(arch)
+# Loading work.fa(arch)
 # Loading work.mux8to1(arch)
 add wave -position insertpoint  \
-sim:/testbenchmux/S \
-sim:/testbenchmux/I0 \
-sim:/testbenchmux/I1 \
-sim:/testbenchmux/I2 \
-sim:/testbenchmux/I3 \
-sim:/testbenchmux/I4 \
-sim:/testbenchmux/I5 \
-sim:/testbenchmux/I6 \
-sim:/testbenchmux/I7 \
-sim:/testbenchmux/Y
+sim:/testbenchlab6/A \
+sim:/testbenchlab6/B \
+sim:/testbenchlab6/Opcode \
+sim:/testbenchlab6/F \
+sim:/testbenchlab6/Cout \
+sim:/testbenchlab6/Z
 run
-# ** Note: Tests finished
-#    Time: 80 ns  Iteration: 0  Instance: /testbenchmux
-run
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: Tests finished
-#    Time: 80 ns  Iteration: 0  Instance: /testbenchmux
-# End time: 13:51:05 on Oct 31,2026, Elapsed time: 0:24:29
-# Errors: 0, Warnings: 1
+# ** Note: All tests finished
+#    Time: 20480 ns  Iteration: 0  Instance: /testbenchlab6
+# End time: 14:26:21 on Oct 31,2026, Elapsed time: 0:04:55
+# Errors: 0, Warnings: 8
