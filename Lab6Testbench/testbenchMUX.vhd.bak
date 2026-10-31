@@ -9,79 +9,81 @@ architecture arch of testbenchMUX is
 
     component Mux8to1 is
         port (
-        S   : in  std_logic_vector(2 downto 0);
-        I0, I1, I2, I3 : in std_logic_vector(4 downto 0);
-        I4, I5, I6, I7 : in std_logic_vector(4 downto 0);
-        Y   : out std_logic_vector(4 downto 0)
-    	);
+            S : in std_logic_vector(2 downto 0);
+            I0, I1, I2, I3 : in std_logic_vector(4 downto 0);
+            I4, I5, I6, I7 : in std_logic_vector(4 downto 0);
+            Y : out std_logic_vector(4 downto 0)
+        );
     end component;
 
     signal S : std_logic_vector(2 downto 0);
-    signal I0, I1, I2, I3, I4, I5, I6, I7, Y : std_logic_vector(4 downto 0);
+    signal I0, I1, I2, I3, I4, I5, I6, I7, Y :
+        std_logic_vector(4 downto 0);
 
 begin
 
-    DUT: Mux8to1 port map(S, I0, I1, I2, I3, I4, I5, I6, I7, Y);
+    DUT: Mux8to1 port map(S, I0, I1, I2, I3,
+                          I4, I5, I6, I7, Y);
 
     inputs: process
     begin
 
-I0 <= "00000001";
-I1 <= "00000010";
-I2 <= "00000100";
-I3 <= "00001000";
-I4 <= "00010000";
-I5 <= "00100000";
-I6 <= "01000000";
-I7 <= "10000000";
+        I0 <= "00001";
+        I1 <= "00010";
+        I2 <= "00100";
+        I3 <= "01000";
+        I4 <= "10000";
+        I5 <= "00011";
+        I6 <= "00110";
+        I7 <= "01100";
 
-                S <= 0;
-                wait for 10 ns;
-                assert unsigned(Y) = I0
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "000";
+        wait for 10 ns;
+        assert Y = I0
+            report "Incorrect result for I0 " & Y
+            severity error;
 
-                S <= 1;
-                wait for 10 ns;
-                assert unsigned(Y) = I1
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "001";
+        wait for 10 ns;
+        assert Y = I1
+            report "Incorrect result for I1 " & Y
+            severity error;
 
-                S <= 2;
-                wait for 10 ns;
-                assert unsigned(Y) = I2
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "010";
+        wait for 10 ns;
+        assert Y = I2
+            report "Incorrect result for I2 " & Y
+            severity error;
 
-                S <= 3;
-                wait for 10 ns;
-                assert unsigned(Y) = I3
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "011";
+        wait for 10 ns;
+        assert Y = I3
+            report "Incorrect result for I3 " & Y
+            severity error;
 
-                S <= 4;
-                wait for 10 ns;
-                assert unsigned(Y) = I4
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "100";
+        wait for 10 ns;
+        assert Y = I4
+            report "Incorrect result for I4 " & Y
+            severity error;
 
-                S <= 5;
-                wait for 10 ns;
-                assert unsigned(Y) = I5
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "101";
+        wait for 10 ns;
+        assert Y = I5
+            report "Incorrect result for I5 " & Y
+            severity error;
 
-                S <= 6;
-                wait for 10 ns;
-                assert unsigned(Y) = I6
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "110";
+        wait for 10 ns;
+        assert Y = I6
+            report "Incorrect result for I6 " & Y
+            severity error;
 
-                S <= 7;
-                wait for 10 ns;
-                assert unsigned(Y) = I7
-                    report "Incorrect result " & integer'image(Y)
-                    severity error;
+        S <= "111";
+        wait for 10 ns;
+        assert Y = I7
+            report "Incorrect result for I7 " & Y
+            severity error;
 
         report "Tests finished" severity note;
         wait;
