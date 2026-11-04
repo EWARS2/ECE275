@@ -65,3 +65,20 @@ set_global_assignment -name VHDL_FILE FA.vhd
 set_global_assignment -name VHDL_FILE Lab6.vhd
 set_global_assignment -name VHDL_FILE Mux8to1.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_AC28 -to A[1]
+set_location_assignment PIN_AC27 -to A[2]
+set_location_assignment PIN_AD27 -to A[3]
+set_location_assignment PIN_AB27 -to B[0]
+set_location_assignment PIN_AC26 -to B[1]
+set_location_assignment PIN_AD26 -to B[2]
+set_location_assignment PIN_AB26 -to B[3]
+set_location_assignment PIN_AA22 -to Opcode[0]
+set_location_assignment PIN_Y24 -to Opcode[1]
+set_location_assignment PIN_Y23 -to Opcode[2]
+set_location_assignment PIN_G19 -to Z
+set_location_assignment PIN_E21 -to F[0]
+set_location_assignment PIN_E22 -to F[1]
+set_location_assignment PIN_E25 -to F[2]
+set_location_assignment PIN_E24 -to F[3]
+set_location_assignment PIN_H21 -to Cout
+set_location_assignment PIN_AB28 -to A[0]
