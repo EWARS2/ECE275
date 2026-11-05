@@ -174,11 +174,11 @@ R30
 R11
 R12
 Etestbenchlab6
-Z31 w1793902413
+Z31 w1793902608
 Z32 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 61
+!i122 63
 R3
 Z33 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd
 Z34 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd
@@ -188,9 +188,9 @@ V`f8jgPfC2^X@HgebH_ggo0
 !s100 VzBRi>Z`iR_@Z92IIccFG3
 R6
 32
-R16
+!s110 1793902615
 !i10b 1
-R17
+!s108 1793902615.000000
 Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
 Z36 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
 !i113 1

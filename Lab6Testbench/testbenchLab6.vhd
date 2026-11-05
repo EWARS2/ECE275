@@ -28,6 +28,8 @@ begin
 
     inputs: process
 
+        variable expected_cout : std_logic;
+
         procedure check_result(
             expected : integer;
             expected_cout : std_logic;
@@ -75,56 +77,84 @@ begin
                 A <= std_logic_vector(to_unsigned(i, 4));
                 B <= std_logic_vector(to_unsigned(j, 4));
 
-                -- Opcode 000: A - 1
+                -- Opcode 000: A - 1 (Decrement)
                 Opcode <= "000";
                 wait for 10 ns;
-                check_result(i + 15,
-                             '1' when i = 0 else '0',
+
+                if i = 0 then
+                    expected_cout := '1';
+                else
+                    expected_cout := '0';
+                end if;
+
+                check_result(i + 15, expected_cout,
                              "Decrement", i, j);
 
-                -- Opcode 001: A + 1
+                -- Opcode 001: A + 1 (Increment)
                 Opcode <= "001";
                 wait for 10 ns;
-                check_result(i + 1,
-                             '1' when i = 15 else '0',
+
+                if i = 15 then
+                    expected_cout := '1';
+                else
+                    expected_cout := '0';
+                end if;
+
+                check_result(i + 1, expected_cout,
                              "Increment", i, j);
 
                 -- Opcode 010: NOT A
                 Opcode <= "010";
                 wait for 10 ns;
+
                 check_result(to_integer(unsigned(not A)),
                              '0', "NOT", i, j);
 
                 -- Opcode 011: A OR B
                 Opcode <= "011";
                 wait for 10 ns;
+
                 check_result(to_integer(unsigned(A or B)),
                              '0', "OR", i, j);
 
                 -- Opcode 100: A XOR B
                 Opcode <= "100";
                 wait for 10 ns;
+
                 check_result(to_integer(unsigned(A xor B)),
                              '0', "XOR", i, j);
 
                 -- Opcode 101: A AND B
                 Opcode <= "101";
                 wait for 10 ns;
+
                 check_result(to_integer(unsigned(A and B)),
                              '0', "AND", i, j);
 
-                -- Opcode 110: A - B
+                -- Opcode 110: A - B (Subtract)
                 Opcode <= "110";
                 wait for 10 ns;
-                check_result(i - j + 16,
-                             '1' when i < j else '0',
+
+                if i < j then
+                    expected_cout := '1';
+                else
+                    expected_cout := '0';
+                end if;
+
+                check_result(i - j + 16, expected_cout,
                              "Subtract", i, j);
 
-                -- Opcode 111: A + B
+                -- Opcode 111: A + B (Add)
                 Opcode <= "111";
                 wait for 10 ns;
-                check_result(i + j,
-                             '1' when (i + j) > 15 else '0',
+
+                if (i + j) > 15 then
+                    expected_cout := '1';
+                else
+                    expected_cout := '0';
+                end if;
+
+                check_result(i + j, expected_cout,
                              "Add", i, j);
 
             end loop;

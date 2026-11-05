@@ -1,27 +1,2 @@
-vsim work.testbenchlab6
-# vsim work.testbenchlab6 
-# Start time: 11:35:19 on Nov 05,2026
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbenchlab6(arch)
-# Loading work.lab6(arch)
-# Loading work.rca(arch)
-# Loading work.fa(arch)
-# Loading work.mux8to1(arch)
-add wave -position insertpoint  \
-sim:/testbenchlab6/A \
-sim:/testbenchlab6/B \
-sim:/testbenchlab6/Opcode \
-sim:/testbenchlab6/F \
-sim:/testbenchlab6/Cout \
-sim:/testbenchlab6/Z
-run
-# ** Note: All tests finished
-#    Time: 20480 ns  Iteration: 0  Instance: /testbenchlab6
-# Compile of Lab6.vhd was successful.
 # Compile of testbenchLab6.vhd failed with 4 errors.
-# 2 compiles, 1 failed with 4 errors.
-# End time: 12:14:58 on Nov 05,2026, Elapsed time: 0:39:39
-# Errors: 0, Warnings: 2
+# Compile of testbenchLab6.vhd failed with 4 errors.
