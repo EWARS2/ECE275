@@ -20,3 +20,8 @@ sim:/testbenchlab6/Z
 run
 # ** Note: All tests finished
 #    Time: 20480 ns  Iteration: 0  Instance: /testbenchlab6
+# Compile of Lab6.vhd was successful.
+# Compile of testbenchLab6.vhd failed with 4 errors.
+# 2 compiles, 1 failed with 4 errors.
+# End time: 12:14:58 on Nov 05,2026, Elapsed time: 0:39:39
+# Errors: 0, Warnings: 2

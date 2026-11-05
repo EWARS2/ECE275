@@ -30,6 +30,7 @@ begin
 
         procedure check_result(
             expected : integer;
+            expected_cout : std_logic;
             operation : string;
             a_value, b_value : integer
         ) is
@@ -42,20 +43,12 @@ begin
                        integer'image(b_value)
                 severity error;
 
-            -- Check the carry-out bit
-            if expected >= 16 then
-                assert Cout = '1'
-                    report operation & " Incorrect Cout: A=" &
-                           integer'image(a_value) & " B=" &
-                           integer'image(b_value)
-                    severity error;
-            else
-                assert Cout = '0'
-                    report operation & " Incorrect Cout: A=" &
-                           integer'image(a_value) & " B=" &
-                           integer'image(b_value)
-                    severity error;
-            end if;
+            -- Check the carry/borrow flag
+            assert Cout = expected_cout
+                report operation & " Incorrect Cout: A=" &
+                       integer'image(a_value) & " B=" &
+                       integer'image(b_value)
+                severity error;
 
             -- Check the zero flag
             if (expected mod 16) = 0 then
@@ -85,46 +78,54 @@ begin
                 -- Opcode 000: A - 1
                 Opcode <= "000";
                 wait for 10 ns;
-                check_result(i + 15, "Decrement", i, j);
+                check_result(i + 15,
+                             '1' when i = 0 else '0',
+                             "Decrement", i, j);
 
                 -- Opcode 001: A + 1
                 Opcode <= "001";
                 wait for 10 ns;
-                check_result(i + 1, "Increment", i, j);
+                check_result(i + 1,
+                             '1' when i = 15 else '0',
+                             "Increment", i, j);
 
                 -- Opcode 010: NOT A
                 Opcode <= "010";
                 wait for 10 ns;
                 check_result(to_integer(unsigned(not A)),
-                             "NOT", i, j);
+                             '0', "NOT", i, j);
 
                 -- Opcode 011: A OR B
                 Opcode <= "011";
                 wait for 10 ns;
                 check_result(to_integer(unsigned(A or B)),
-                             "OR", i, j);
+                             '0', "OR", i, j);
 
                 -- Opcode 100: A XOR B
                 Opcode <= "100";
                 wait for 10 ns;
                 check_result(to_integer(unsigned(A xor B)),
-                             "XOR", i, j);
+                             '0', "XOR", i, j);
 
                 -- Opcode 101: A AND B
                 Opcode <= "101";
                 wait for 10 ns;
                 check_result(to_integer(unsigned(A and B)),
-                             "AND", i, j);
+                             '0', "AND", i, j);
 
                 -- Opcode 110: A - B
                 Opcode <= "110";
                 wait for 10 ns;
-                check_result(i - j + 16, "Subtract", i, j);
+                check_result(i - j + 16,
+                             '1' when i < j else '0',
+                             "Subtract", i, j);
 
                 -- Opcode 111: A + B
                 Opcode <= "111";
                 wait for 10 ns;
-                check_result(i + j, "Add", i, j);
+                check_result(i + j,
+                             '1' when (i + j) > 15 else '0',
+                             "Add", i, j);
 
             end loop;
         end loop;
@@ -135,3 +136,4 @@ begin
     end process;
 
 end architecture;
+
