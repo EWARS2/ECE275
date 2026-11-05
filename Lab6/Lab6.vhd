@@ -64,7 +64,9 @@ begin
 
     -- ALU outputs
     F    <= MuxOut(3 downto 0);
-    Cout <= MuxOut(4);
+    Cout <= not MuxOut(4) when Opcode = "110" 
+	 else not MuxOut(4) when Opcode = "000"
+	 else MuxOut(4);
     Z    <= '1' when MuxOut(3 downto 0) = "0000" else '0';
 
 end architecture;

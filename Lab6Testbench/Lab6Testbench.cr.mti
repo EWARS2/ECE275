@@ -7,30 +7,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity testbenchLab6
 -- Compiling architecture arch of testbenchLab6
 
-} {} {}} C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/Lab6.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Lab6
--- Compiling architecture arch of Lab6
-
-} {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
+} {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity testbenchMUX
--- Compiling architecture arch of testbenchMUX
-
-} {} {}} C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity RCA
--- Compiling architecture arch of RCA
+-- Compiling entity testbenchRCA
+-- Compiling architecture arch of testbenchRCA
 
 } {} {}} C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/Mux8to1.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -40,14 +24,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity MUX8to1
 -- Compiling architecture arch of MUX8to1
 
-} {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+} {} {}} C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/RCA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RCA
+-- Compiling architecture arch of RCA
+
+} {} {}} C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity testbenchRCA
--- Compiling architecture arch of testbenchRCA
+-- Compiling entity testbenchMUX
+-- Compiling architecture arch of testbenchMUX
 
 } {} {}} C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Admin/Documents/ECE275/Lab6/FA.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
