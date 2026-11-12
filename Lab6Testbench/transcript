@@ -1,2 +1,48 @@
 # Compile of testbenchLab6.vhd failed with 4 errors.
 # Compile of testbenchLab6.vhd failed with 4 errors.
+# Compile of testbenchLab6.vhd was successful.
+vsim work.lab6
+# vsim work.lab6 
+# Start time: 12:21:45 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab6(arch)
+# Loading work.rca(arch)
+# Loading work.fa(arch)
+# Loading work.mux8to1(arch)
+add wave -position insertpoint  \
+sim:/lab6/A \
+sim:/lab6/B \
+sim:/lab6/Opcode \
+sim:/lab6/F \
+sim:/lab6/Cout \
+sim:/lab6/Z
+run
+vsim work.testbenchlab6
+# End time: 13:09:14 on Nov 05,2026, Elapsed time: 0:47:29
+# Errors: 0, Warnings: 4
+# vsim work.testbenchlab6 
+# Start time: 13:09:14 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbenchlab6(arch)
+# Loading work.lab6(arch)
+# Loading work.rca(arch)
+# Loading work.fa(arch)
+# Loading work.mux8to1(arch)
+add wave -position insertpoint  \
+sim:/testbenchlab6/A \
+sim:/testbenchlab6/B \
+sim:/testbenchlab6/Opcode \
+sim:/testbenchlab6/F \
+sim:/testbenchlab6/Cout \
+sim:/testbenchlab6/Z
+run
+# ** Note: All tests finished
+#    Time: 20480 ns  Iteration: 0  Instance: /testbenchlab6
+run
+# End time: 13:09:59 on Nov 05,2026, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 1

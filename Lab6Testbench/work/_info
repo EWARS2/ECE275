@@ -174,11 +174,11 @@ R30
 R11
 R12
 Etestbenchlab6
-Z31 w1793902608
+Z31 w1793902839
 Z32 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 63
+!i122 64
 R3
 Z33 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd
 Z34 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd
@@ -188,11 +188,11 @@ V`f8jgPfC2^X@HgebH_ggo0
 !s100 VzBRi>Z`iR_@Z92IIccFG3
 R6
 32
-!s110 1793902615
+Z35 !s110 1793902886
 !i10b 1
-!s108 1793902615.000000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
-Z36 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
+Z36 !s108 1793902886.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
+Z38 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchLab6.vhd|
 !i113 1
 R11
 R12
@@ -200,31 +200,31 @@ Aarch
 R32
 R1
 R2
-DEx4 work 13 testbenchlab6 0 22 `f8jgPfC2^X@HgebH_ggo0
-!i122 59
+Z39 DEx4 work 13 testbenchlab6 0 22 `f8jgPfC2^X@HgebH_ggo0
+!i122 64
 l25
-L8 130
-VlfEl;aIOQPfZC^z^5K2?V0
-!s100 KIjX?RAYd]Q[dXAAE_^;<1
+L8 161
+VHdD6_[]l_7kZ@d`;?JTYF0
+!s100 SYT@Pf7gZ_Y40YcmM_JKj3
 R6
 32
-!s110 1793474468
-!i10b 1
-!s108 1793474468.000000
 R35
+!i10b 1
 R36
+R37
+R38
 !i113 1
 R11
 R12
 Etestbenchmux
-Z37 w1793471180
+Z40 w1793471180
 R32
 R1
 R2
 !i122 51
 R3
-Z38 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
-Z39 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
+Z41 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
+Z42 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd
 l0
 L5 1
 VNQCUFUA_cg<Eo[S3DRf202
@@ -234,8 +234,8 @@ R6
 R7
 !i10b 1
 R8
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
-Z41 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
+Z44 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchMUX.vhd|
 !i113 1
 R11
 R12
@@ -254,20 +254,20 @@ R6
 R7
 !i10b 1
 R8
-R40
-R41
+R43
+R44
 !i113 1
 R11
 R12
 Etestbenchrca
-Z42 w1793308841
+Z45 w1793308841
 R32
 R1
 R2
 !i122 50
 R3
-Z43 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
-Z44 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+Z46 8C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
+Z47 FC:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd
 l0
 L5 1
 VO:JFe23naYO<JeCYz3W3Z2
@@ -277,8 +277,8 @@ R6
 R7
 !i10b 1
 R8
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
-Z46 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
+Z49 !s107 C:/Users/Admin/Documents/ECE275/Lab6Testbench/testbenchRCA.vhd|
 !i113 1
 R11
 R12
@@ -297,8 +297,8 @@ R6
 R7
 !i10b 1
 R8
-R45
-R46
+R48
+R49
 !i113 1
 R11
 R12

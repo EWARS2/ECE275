@@ -1,0 +1,45 @@
+|Lab7
+Reset => JK_Latch:stageA.clr
+Reset => JK_Latch:stageB.pre
+Reset => JK_Latch:stageC.clr
+Clock => JK_Latch:stageA.clk
+Clock => JK_Latch:stageB.clk
+Clock => JK_Latch:stageC.clk
+Q[0] <= JK_Latch:stageC.Q
+Q[1] <= JK_Latch:stageB.Q
+Q[2] <= JK_Latch:stageA.Q
+
+
+|Lab7|JK_Latch:stageA
+clk => nxt_state.CLK
+J => Mux0.IN4
+clr => nxt_state.ACLR
+clr => nxt_state.IN0
+pre => nxt_state.IN1
+K => Mux0.IN5
+Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab7|JK_Latch:stageB
+clk => nxt_state.CLK
+J => Mux0.IN4
+clr => nxt_state.ACLR
+clr => nxt_state.IN0
+pre => nxt_state.IN1
+K => Mux0.IN5
+Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab7|JK_Latch:stageC
+clk => nxt_state.CLK
+J => Mux0.IN4
+clr => nxt_state.ACLR
+clr => nxt_state.IN0
+pre => nxt_state.IN1
+K => Mux0.IN5
+Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+
+

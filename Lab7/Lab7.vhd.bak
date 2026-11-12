@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Counter is
+    port (
+        Reset, Clock  : in  std_logic;
+        Q : out std_logic_vector(2 downto 0)
+    );
+end Lab6;
+
+architecture arch of Counter is
+
+    component JK_Latch is
+	port (clk, J, clr, pre, K: in std_logic;
+        Q: out std_logic;
+        Qnot : out std_logic);
+    end component;
+
+	 
+    signal signal0     : std_logic;
+
+    signal Qa     : std_logic;
+    signal Qb     : std_logic;
+    signal Qc     : std_logic; 
+	 
+    signal QaNot     : std_logic;
+    signal QbNot     : std_logic;
+    signal QcNot     : std_logic; 
+
+begin
+	
+	
+	signal0 <= Qb and QcNot;
+	stageA: JK_Latch port map(Clock, signal0, Reset, '1', '1', Qa, QaNot);
+	stageB: JK_Latch port map(Clock, '1', '1', Reset, Qa, Qb, QbNot);
+	stageC: JK_Latch port map(Clock, QbNot, Reset, '1', '1', Qc, QcNot);
+	
+	Q(2) <= Qa;
+	Q(1) <= Qb;
+	Q(0) <= Qc;
+	
+
+end architecture;
