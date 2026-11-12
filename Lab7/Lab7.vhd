@@ -10,10 +10,10 @@ end;
 
 architecture arch of Lab7 is
 
-    component JK_Latch is
-  port (clk, J, clr, pre, K : in std_logic;
+    component JK_FF is
+  port (clock, J, clrn, pren, K : in std_logic;
         Q: out std_logic;
-        Qnot : out std_logic);
+        Qbar : out std_logic);
     end component;
 
 	 
@@ -31,9 +31,9 @@ begin
 	
 	
 	signal0 <= Qb and QcNot;
-	stageA: JK_Latch port map(Clock, signal0, Reset, '1', '1', Qa, QaNot);
-	stageB: JK_Latch port map(Clock, '1', '1', Reset, Qa, Qb, QbNot);
-	stageC: JK_Latch port map(Clock, QbNot, Reset, '1', '1', Qc, QcNot);
+	stageA: JK_FF port map(Clock, signal0, Reset, '1', '1', Qa, QaNot);
+	stageB: JK_FF port map(Clock, '1', '1', Reset, Qa, Qb, QbNot);
+	stageC: JK_FF port map(Clock, QbNot, Reset, '1', '1', Qc, QcNot);
 	
 	Q(2) <= Qa;
 	Q(1) <= Qb;

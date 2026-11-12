@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab7
-Thu Nov 12 11:53:17 2026
+Thu Nov 12 16:23:26 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,14 +13,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Port Connectivity Checks: "JK_Latch:stageC"
- 11. Port Connectivity Checks: "JK_Latch:stageB"
- 12. Port Connectivity Checks: "JK_Latch:stageA"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "JK_FF:stageC"
+ 10. Port Connectivity Checks: "JK_FF:stageB"
+ 11. Port Connectivity Checks: "JK_FF:stageA"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -47,15 +46,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 12 11:53:17 2026       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 12 16:23:26 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Lab7                                        ;
 ; Top-level Entity Name              ; Lab7                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
+; Total logic elements               ; 3                                           ;
+;     Total combinational functions  ; 3                                           ;
+;     Dedicated logic registers      ; 3                                           ;
+; Total registers                    ; 3                                           ;
 ; Total pins                         ; 5                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -159,52 +158,55 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; JK_Latch.vhd                     ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab7/JK_Latch.vhd ;         ;
-; Lab7.vhd                         ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                          ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; Lab7.vhd                         ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd  ;         ;
+; JK_FF.vhd                        ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Lab7/JK_FF.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-;                                             ;             ;
-; Total combinational functions               ; 0           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 0           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 0           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 5           ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; Reset~input ;
-; Maximum fan-out                             ; 2           ;
-; Total fan-out                               ; 7           ;
-; Average fan-out                             ; 0.70        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 3                 ;
+;                                             ;                   ;
+; Total combinational functions               ; 3                 ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 1                 ;
+;     -- 3 input functions                    ; 2                 ;
+;     -- <=2 input functions                  ; 0                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 3                 ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 3                 ;
+;     -- Dedicated logic registers            ; 3                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 5                 ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; JK_FF:stageB|temp ;
+; Maximum fan-out                             ; 4                 ;
+; Total fan-out                               ; 24                ;
+; Average fan-out                             ; 1.50              ;
++---------------------------------------------+-------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,21 +214,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Lab7                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |Lab7               ; Lab7        ; work         ;
+; |Lab7                      ; 3 (0)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |Lab7               ; Lab7        ; work         ;
+;    |JK_FF:stageA|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab7|JK_FF:stageA  ; JK_FF       ; work         ;
+;    |JK_FF:stageB|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab7|JK_FF:stageB  ; JK_FF       ; work         ;
+;    |JK_FF:stageC|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab7|JK_FF:stageC  ; JK_FF       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+---------------------------------------+---------------------------------------+
-; Register name                         ; Reason for Removal                    ;
-+---------------------------------------+---------------------------------------+
-; JK_Latch:stageB|nxt_state             ; Stuck at GND due to stuck port clear  ;
-; JK_Latch:stageC|nxt_state             ; Stuck at VCC due to stuck port preset ;
-; JK_Latch:stageA|nxt_state             ; Stuck at VCC due to stuck port preset ;
-; Total Number of Removed Registers = 3 ;                                       ;
-+---------------------------------------+---------------------------------------+
 
 
 +------------------------------------------------------+
@@ -234,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -244,34 +237,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "JK_Latch:stageC" ;
-+------+-------+----------+-------------------+
-; Port ; Type  ; Severity ; Details           ;
-+------+-------+----------+-------------------+
-; pre  ; Input ; Info     ; Stuck at VCC      ;
-; k    ; Input ; Info     ; Stuck at VCC      ;
-+------+-------+----------+-------------------+
++------------------------------------------+
+; Port Connectivity Checks: "JK_FF:stageC" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; pren ; Input ; Info     ; Stuck at VCC   ;
+; k    ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "JK_Latch:stageB" ;
-+------+-------+----------+-------------------+
-; Port ; Type  ; Severity ; Details           ;
-+------+-------+----------+-------------------+
-; j    ; Input ; Info     ; Stuck at VCC      ;
-; clr  ; Input ; Info     ; Stuck at VCC      ;
-+------+-------+----------+-------------------+
++------------------------------------------+
+; Port Connectivity Checks: "JK_FF:stageB" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; j    ; Input ; Info     ; Stuck at VCC   ;
+; clrn ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "JK_Latch:stageA"                                                                    ;
+; Port Connectivity Checks: "JK_FF:stageA"                                                                       ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; pre  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; pren ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; qnot ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -281,13 +274,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 5                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
+; cycloneiii_ff         ; 3                           ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 3                           ;
+;     normal            ; 3                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.67                        ;
+; Average LUT depth     ; 0.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +291,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -306,32 +301,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 12 11:52:36 2026
+    Info: Processing started: Thu Nov 12 16:22:50 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab7 -c Lab7
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file jk_latch.vhd
-    Info (12022): Found design unit 1: JK_Latch-arch File: C:/Users/Admin/Documents/ECE275/Lab7/JK_Latch.vhd Line: 10
-    Info (12023): Found entity 1: JK_Latch File: C:/Users/Admin/Documents/ECE275/Lab7/JK_Latch.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file lab7.vhd
     Info (12022): Found design unit 1: Lab7-arch File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 11
     Info (12023): Found entity 1: Lab7 File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file jk_ff.vhd
+    Info (12022): Found design unit 1: JK_FF-arch File: C:/Users/Admin/Documents/ECE275/Lab7/JK_FF.vhd Line: 10
+    Info (12023): Found entity 1: JK_FF File: C:/Users/Admin/Documents/ECE275/Lab7/JK_FF.vhd Line: 4
 Info (12127): Elaborating entity "Lab7" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Lab7.vhd(26): object "QaNot" assigned a value but never read File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 26
-Info (12128): Elaborating entity "JK_Latch" for hierarchy "JK_Latch:stageA" File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 34
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Q[1]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 7
+Info (12128): Elaborating entity "JK_FF" for hierarchy "JK_FF:stageA" File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 34
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clock" File: C:/Users/Admin/Documents/ECE275/Lab7/Lab7.vhd Line: 6
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 3 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 13257 megabytes
-    Info: Processing ended: Thu Nov 12 11:53:17 2026
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:01:17
+    Info (21061): Implemented 3 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 13283 megabytes
+    Info: Processing ended: Thu Nov 12 16:23:26 2026
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:01:09
 
 

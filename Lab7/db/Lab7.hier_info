@@ -1,45 +1,60 @@
 |Lab7
-Reset => JK_Latch:stageA.clr
-Reset => JK_Latch:stageB.pre
-Reset => JK_Latch:stageC.clr
-Clock => JK_Latch:stageA.clk
-Clock => JK_Latch:stageB.clk
-Clock => JK_Latch:stageC.clk
-Q[0] <= JK_Latch:stageC.Q
-Q[1] <= JK_Latch:stageB.Q
-Q[2] <= JK_Latch:stageA.Q
+Reset => JK_FF:stageA.clrn
+Reset => JK_FF:stageB.pren
+Reset => JK_FF:stageC.clrn
+Clock => JK_FF:stageA.clock
+Clock => JK_FF:stageB.clock
+Clock => JK_FF:stageC.clock
+Q[0] <= JK_FF:stageC.Q
+Q[1] <= JK_FF:stageB.Q
+Q[2] <= JK_FF:stageA.Q
 
 
-|Lab7|JK_Latch:stageA
-clk => nxt_state.CLK
-J => Mux0.IN4
-clr => nxt_state.ACLR
-clr => nxt_state.IN0
-pre => nxt_state.IN1
-K => Mux0.IN5
-Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
-Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+|Lab7|JK_FF:stageA
+clock => temp.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+clrn => temp.OUTPUTSELECT
+pren => temp.OUTPUTSELECT
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab7|JK_Latch:stageB
-clk => nxt_state.CLK
-J => Mux0.IN4
-clr => nxt_state.ACLR
-clr => nxt_state.IN0
-pre => nxt_state.IN1
-K => Mux0.IN5
-Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
-Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+|Lab7|JK_FF:stageB
+clock => temp.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+clrn => temp.OUTPUTSELECT
+pren => temp.OUTPUTSELECT
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab7|JK_Latch:stageC
-clk => nxt_state.CLK
-J => Mux0.IN4
-clr => nxt_state.ACLR
-clr => nxt_state.IN0
-pre => nxt_state.IN1
-K => Mux0.IN5
-Q <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
-Qnot <= nxt_state.DB_MAX_OUTPUT_PORT_TYPE
+|Lab7|JK_FF:stageC
+clock => temp.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+clrn => temp.OUTPUTSELECT
+pren => temp.OUTPUTSELECT
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+Qbar <= temp.DB_MAX_OUTPUT_PORT_TYPE
 
 
