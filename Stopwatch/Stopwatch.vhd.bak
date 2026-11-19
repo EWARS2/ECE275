@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Stopwatch is
+    port(A : in  std_logic_vector(3 downto 0);
+			B : in std_logic;
+         Sum : out std_logic_vector(4 downto 0));
+end;
+
+architecture arch of Stopwatch is
+
+    component HA is
+        port(
+            A, B      : in std_logic;
+            Sum, Cout : out std_logic
+        );
+    end component;
+
+    signal C : std_logic_vector(3 downto 0);
+
+
+begin
+
+
+
+end architecture;
