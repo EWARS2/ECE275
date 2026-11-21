@@ -2,11 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity RegN is
-	(generic N: integer := 4)
+	generic (N : integer := 4);
 	port (clock, reset, load : in std_logic;
 			D : in std_logic_vector(N-1 downto 0);
-			Q : out std_logic_vector(N-1 downto 0);
-	);
+			Q : out std_logic_vector(N-1 downto 0));
 end;
 
 architecture arch of RegN is
