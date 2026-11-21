@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Stopwatch
-Fri Nov 20 22:27:46 2026
+Fri Nov 20 22:30:36 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 20 22:27:46 2026           ;
+; Analysis & Synthesis Status        ; Failed - Fri Nov 20 22:30:36 2026           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Stopwatch                                   ;
 ; Top-level Entity Name              ; Stopwatch                                   ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 20 22:27:04 2026
+    Info: Processing started: Fri Nov 20 22:29:50 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Stopwatch -c Stopwatch
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -184,21 +184,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file bcd_dec
 Info (12021): Found 2 design units, including 1 entities, in source file regn.vhd
     Info (12022): Found design unit 1: RegN-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/RegN.vhd Line: 11
     Info (12023): Found entity 1: RegN File: C:/Users/Admin/Documents/ECE275/Stopwatch/RegN.vhd Line: 4
-Error (10500): VHDL syntax error at Stopwatch.vhd(29) near text "generic";  expecting "(", or an identifier ("generic" is a reserved keyword), or a sequential statement File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 29
-Error (10500): VHDL syntax error at Stopwatch.vhd(30) near text "Digit";  expecting "<=" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 30
-Error (10500): VHDL syntax error at Stopwatch.vhd(32) near text "generic";  expecting "(", or an identifier ("generic" is a reserved keyword), or a sequential statement File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 32
-Error (10500): VHDL syntax error at Stopwatch.vhd(33) near text "Digit";  expecting "<=" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 33
-Info (12021): Found 0 design units, including 0 entities, in source file stopwatch.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file stopwatch.vhd
+    Info (12022): Found design unit 1: Stopwatch-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 9
+    Info (12023): Found entity 1: Stopwatch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2to1.vhd
     Info (12022): Found design unit 1: MUX2to1-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Mux2to1.vhd Line: 12
     Info (12023): Found entity 1: MUX2to1 File: C:/Users/Admin/Documents/ECE275/Stopwatch/Mux2to1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file digit.vhd
     Info (12022): Found design unit 1: Digit-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 13
     Info (12023): Found entity 1: Digit File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 4
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
+Error (10482): VHDL error at BCD_Decode.vhd(6): object "down" is used but not declared File: C:/Users/Admin/Documents/ECE275/Stopwatch/BCD_Decode.vhd Line: 6
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 13236 megabytes
-    Error: Processing ended: Fri Nov 20 22:27:46 2026
-    Error: Elapsed time: 00:00:42
-    Error: Total CPU time (on all processors): 00:01:23
+    Error: Processing ended: Fri Nov 20 22:30:36 2026
+    Error: Elapsed time: 00:00:46
+    Error: Total CPU time (on all processors): 00:01:27
 
 

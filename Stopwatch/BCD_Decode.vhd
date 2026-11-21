@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity BCD_Decode is
     port(I : in  std_logic_vector(3 downto 0);
-			F : out std_logic_vector(6 down to 0));
+			F : out std_logic_vector(6 downto 0));
 end;
 
 architecture arch of BCD_Decode is

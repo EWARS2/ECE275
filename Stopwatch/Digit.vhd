@@ -20,7 +20,7 @@ architecture arch of Digit is
 	end component;
 	component BCD_Decode is
 		 port(I : in  std_logic_vector(3 downto 0);
-				F : out std_logic_vector(6 down to 0));
+				F : out std_logic_vector(6 downto 0));
 	end component;
 	component RCA is
 		 port(A : in  std_logic_vector(3 downto 0);
