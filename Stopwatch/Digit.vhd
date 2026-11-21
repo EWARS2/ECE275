@@ -7,7 +7,7 @@ entity Digit is
     );
     port(reset, start, clk, Cin: in  std_logic;
          Seg : out std_logic_vector(6 downto 0);
-			Q : out std_logic);
+			Detect : out std_logic);
 end;
 
 architecture arch of Digit is
@@ -35,19 +35,19 @@ architecture arch of Digit is
 	end component;
 	 
 
-    signal QQ, Sum, D : std_logic_vector(3 downto 0);
-	 signal Hz1, Detect : std_logic;
+    signal Q, Sum, D : std_logic_vector(3 downto 0);
+	 signal Hz1, Detects : std_logic;
 
 begin
 	stage0: RegN port map(Hz1, reset, start, D, Q);
 	stage1: BCD_Decode port map(Q, Seg);
 	
-	Q <= QQ;
-	Detect <= '1' when
-		(Digit = 0 and QQ = "1010") or -- Binary 10
-		(Digit = 1  and QQ = "0110") -- Binary 6
+	Detects <= '1' when
+		(Digit = 0 and Q = "1010") or -- Binary 10
+		(Digit = 1  and Q = "0110") -- Binary 6
 	else '0';
+	Detect <= Detects;
 	
 	stage2: RCA port map(Q, Cin, Sum);
-	stage3: MUX2to1 port map(Detect, Sum, "0000" D);
+	stage3: MUX2to1 port map(Detects, Sum, "0000" D);
 end architecture;

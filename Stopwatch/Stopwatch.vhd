@@ -15,21 +15,24 @@ architecture arch of Stopwatch is
 	component Digit is
 		 generic (Digit : integer := 0);
 		 port(reset, start, clk, Cin: in  std_logic;
-				Seg : out std_logic_vector(6 downto 0));
+				Seg : out std_logic_vector(6 downto 0);
+				Detect : out std_logic);
 	end component;
 	 
 
-    signal Q, Sum, D : std_logic_vector(3 downto 0);
+    signal Sum, D : std_logic_vector(3 downto 0);
+	 signal Carry : std_logic;
 	 signal Hz1 : std_logic;
+	 signal Discard : std_logic;
 
 begin
 
 	stage0: clock_divider port map(clk, Hz1);
 	stage1: Digit
 		generic map(Digit => 0 )
-		port map(reset, start, Hz1, '1', Seg0);
+		port map(reset, start, Hz1, '1', Seg0, Carry);
 	stage2: Digit
 		generic map(Digit => 1 )
-		port map(reset, start, Hz1, Q, Seg0);
+		port map(reset, start, Hz1, Carry, Seg1, Discard);
 
 end architecture;

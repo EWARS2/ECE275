@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Stopwatch
-Fri Nov 20 22:30:36 2026
+Fri Nov 20 22:51:18 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 20 22:30:36 2026           ;
+; Analysis & Synthesis Status        ; Failed - Fri Nov 20 22:51:18 2026           ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Stopwatch                                   ;
 ; Top-level Entity Name              ; Stopwatch                                   ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 20 22:29:50 2026
+    Info: Processing started: Fri Nov 20 22:50:34 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Stopwatch -c Stopwatch
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -193,11 +193,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2to1
 Info (12021): Found 2 design units, including 1 entities, in source file digit.vhd
     Info (12022): Found design unit 1: Digit-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 13
     Info (12023): Found entity 1: Digit File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 4
-Error (10482): VHDL error at BCD_Decode.vhd(6): object "down" is used but not declared File: C:/Users/Admin/Documents/ECE275/Stopwatch/BCD_Decode.vhd Line: 6
+Error (10309): VHDL Interface Declaration error in Digit.vhd(49): interface object "Detect" of mode out cannot be read. Change object mode to buffer. File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 49
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 13236 megabytes
-    Error: Processing ended: Fri Nov 20 22:30:36 2026
-    Error: Elapsed time: 00:00:46
-    Error: Total CPU time (on all processors): 00:01:27
+    Error: Processing ended: Fri Nov 20 22:51:18 2026
+    Error: Elapsed time: 00:00:44
+    Error: Total CPU time (on all processors): 00:01:23
 
 
