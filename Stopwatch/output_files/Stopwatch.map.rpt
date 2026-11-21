@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Stopwatch
-Fri Nov 20 22:52:13 2026
+Fri Nov 20 22:53:26 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,23 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Digit:stage1
+ 11. Parameter Settings for User Entity Instance: Digit:stage1|RegN:stage0
+ 12. Parameter Settings for User Entity Instance: Digit:stage2
+ 13. Parameter Settings for User Entity Instance: Digit:stage2|RegN:stage0
+ 14. Port Connectivity Checks: "Digit:stage2|MUX2to1:stage3"
+ 15. Port Connectivity Checks: "Digit:stage2"
+ 16. Port Connectivity Checks: "Digit:stage1|MUX2to1:stage3"
+ 17. Port Connectivity Checks: "Digit:stage1|RCA:stage2|HA:stage3"
+ 18. Port Connectivity Checks: "Digit:stage1"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +53,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 20 22:52:13 2026           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 20 22:53:26 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Stopwatch                                   ;
 ; Top-level Entity Name              ; Stopwatch                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 17                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -156,13 +172,205 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; RCA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/RCA.vhd           ;         ;
+; HA.vhd                           ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/HA.vhd            ;         ;
+; clock_divider.vhd                ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/clock_divider.vhd ;         ;
+; BCD_Decode.vhd                   ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/BCD_Decode.vhd    ;         ;
+; RegN.vhd                         ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/RegN.vhd          ;         ;
+; Stopwatch.vhd                    ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd     ;         ;
+; Mux2to1.vhd                      ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/Mux2to1.vhd       ;         ;
+; Digit.vhd                        ; yes             ; User VHDL File  ; C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd         ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 17    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; reset ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 17    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |Stopwatch                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |Stopwatch          ; Stopwatch   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------+--------------------------------------+
+; Register name                         ; Reason for Removal                   ;
++---------------------------------------+--------------------------------------+
+; Digit:stage2|RegN:stage0|Q[0..3]      ; Stuck at GND due to stuck port clock ;
+; Digit:stage1|RegN:stage0|Q[0..3]      ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 8 ;                                      ;
++---------------------------------------+--------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Digit:stage1 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; digit          ; 0     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Digit:stage1|RegN:stage0 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Digit:stage2 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; digit          ; 1     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Digit:stage2|RegN:stage0 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "Digit:stage2|MUX2to1:stage3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; i1   ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Digit:stage2"                                                                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; detect ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "Digit:stage1|MUX2to1:stage3" ;
++------+-------+----------+-------------------------------+
+; Port ; Type  ; Severity ; Details                       ;
++------+-------+----------+-------------------------------+
+; i1   ; Input ; Info     ; Stuck at GND                  ;
++------+-------+----------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Digit:stage1|RCA:stage2|HA:stage3"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "Digit:stage1" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; cin  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 17                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 20 22:51:31 2026
+    Info: Processing started: Fri Nov 20 22:52:38 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Stopwatch -c Stopwatch
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -193,12 +401,46 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2to1
 Info (12021): Found 2 design units, including 1 entities, in source file digit.vhd
     Info (12022): Found design unit 1: Digit-arch File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 13
     Info (12023): Found entity 1: Digit File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 4
-Error (10368): VHDL error at Digit.vhd(52): illegal range constraint in expression File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 52
-Error (10479): VHDL error at Digit.vhd(52): D type is used but not declared File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 52
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 13236 megabytes
-    Error: Processing ended: Fri Nov 20 22:52:13 2026
-    Error: Elapsed time: 00:00:42
-    Error: Total CPU time (on all processors): 00:01:21
+Info (12127): Elaborating entity "Stopwatch" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Stopwatch.vhd(26): object "Discard" assigned a value but never read File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 26
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:stage0" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 30
+Info (12128): Elaborating entity "Digit" for hierarchy "Digit:stage1" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 31
+Warning (10541): VHDL Signal Declaration warning at Digit.vhd(39): used implicit default value for signal "Hz1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 39
+Info (12128): Elaborating entity "RegN" for hierarchy "Digit:stage1|RegN:stage0" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 42
+Info (12128): Elaborating entity "BCD_Decode" for hierarchy "Digit:stage1|BCD_Decode:stage1" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 43
+Info (12128): Elaborating entity "RCA" for hierarchy "Digit:stage1|RCA:stage2" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 51
+Info (12128): Elaborating entity "HA" for hierarchy "Digit:stage1|RCA:stage2|HA:stage0" File: C:/Users/Admin/Documents/ECE275/Stopwatch/RCA.vhd Line: 24
+Info (12128): Elaborating entity "MUX2to1" for hierarchy "Digit:stage1|MUX2to1:stage3" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 52
+Info (12128): Elaborating entity "Digit" for hierarchy "Digit:stage2" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 34
+Warning (10541): VHDL Signal Declaration warning at Digit.vhd(39): used implicit default value for signal "Hz1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Admin/Documents/ECE275/Stopwatch/Digit.vhd Line: 39
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Seg0[0]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[1]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[2]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[3]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[4]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[5]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "Seg0[6]" is stuck at VCC File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[0]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[1]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[2]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[3]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[4]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[5]" is stuck at GND File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+    Warning (13410): Pin "seg1[6]" is stuck at VCC File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 6
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 5
+    Warning (15610): No output dependent on input pin "start" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 5
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Admin/Documents/ECE275/Stopwatch/Stopwatch.vhd Line: 5
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 14 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 13264 megabytes
+    Info: Processing ended: Fri Nov 20 22:53:26 2026
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:01:28
 
 

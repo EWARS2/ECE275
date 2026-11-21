@@ -1,0 +1,335 @@
+|Stopwatch
+reset => Digit:stage1.reset
+reset => Digit:stage2.reset
+start => Digit:stage1.start
+start => Digit:stage2.start
+clk => clock_divider:stage0.clk_old
+Seg0[0] <= Digit:stage1.Seg[0]
+Seg0[1] <= Digit:stage1.Seg[1]
+Seg0[2] <= Digit:stage1.Seg[2]
+Seg0[3] <= Digit:stage1.Seg[3]
+Seg0[4] <= Digit:stage1.Seg[4]
+Seg0[5] <= Digit:stage1.Seg[5]
+Seg0[6] <= Digit:stage1.Seg[6]
+seg1[0] <= Digit:stage2.Seg[0]
+seg1[1] <= Digit:stage2.Seg[1]
+seg1[2] <= Digit:stage2.Seg[2]
+seg1[3] <= Digit:stage2.Seg[3]
+seg1[4] <= Digit:stage2.Seg[4]
+seg1[5] <= Digit:stage2.Seg[5]
+seg1[6] <= Digit:stage2.Seg[6]
+
+
+|Stopwatch|clock_divider:stage0
+clk_old => b.CLK
+clk_old => count[0].CLK
+clk_old => count[1].CLK
+clk_old => count[2].CLK
+clk_old => count[3].CLK
+clk_old => count[4].CLK
+clk_old => count[5].CLK
+clk_old => count[6].CLK
+clk_old => count[7].CLK
+clk_old => count[8].CLK
+clk_old => count[9].CLK
+clk_old => count[10].CLK
+clk_old => count[11].CLK
+clk_old => count[12].CLK
+clk_old => count[13].CLK
+clk_old => count[14].CLK
+clk_old => count[15].CLK
+clk_old => count[16].CLK
+clk_old => count[17].CLK
+clk_old => count[18].CLK
+clk_old => count[19].CLK
+clk_old => count[20].CLK
+clk_old => count[21].CLK
+clk_old => count[22].CLK
+clk_old => count[23].CLK
+clk_old => count[24].CLK
+clk_old => count[25].CLK
+clk_old => count[26].CLK
+clk_old => count[27].CLK
+clk_old => count[28].CLK
+clk_old => count[29].CLK
+clk_old => count[30].CLK
+clk_old => count[31].CLK
+clk_new <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1
+reset => RegN:stage0.reset
+start => RegN:stage0.load
+clk => ~NO_FANOUT~
+Cin => RCA:stage2.B
+Seg[0] <= BCD_Decode:stage1.F[0]
+Seg[1] <= BCD_Decode:stage1.F[1]
+Seg[2] <= BCD_Decode:stage1.F[2]
+Seg[3] <= BCD_Decode:stage1.F[3]
+Seg[4] <= BCD_Decode:stage1.F[4]
+Seg[5] <= BCD_Decode:stage1.F[5]
+Seg[6] <= BCD_Decode:stage1.F[6]
+Detect <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|RegN:stage0
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|BCD_Decode:stage1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN0
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[1] => F.IN1
+I[1] => F.IN0
+I[1] => F.IN0
+I[1] => F.IN0
+I[1] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN0
+I[3] => F.IN1
+F[0] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[6] <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|RCA:stage2
+A[0] => HA:stage0.A
+A[1] => HA:stage1.A
+A[2] => HA:stage2.A
+A[3] => HA:stage3.A
+B => HA:stage0.B
+Sum[0] <= HA:stage0.Sum
+Sum[1] <= HA:stage1.Sum
+Sum[2] <= HA:stage2.Sum
+Sum[3] <= HA:stage3.Sum
+
+
+|Stopwatch|Digit:stage1|RCA:stage2|HA:stage0
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|RCA:stage2|HA:stage1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|RCA:stage2|HA:stage2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|RCA:stage2|HA:stage3
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage1|MUX2to1:stage3
+S => Selector0.IN3
+S => Selector1.IN3
+S => Selector2.IN3
+S => Selector3.IN3
+S => Selector0.IN1
+S => Selector1.IN1
+S => Selector2.IN1
+S => Selector3.IN1
+I0[0] => Selector3.IN4
+I0[1] => Selector2.IN4
+I0[2] => Selector1.IN4
+I0[3] => Selector0.IN4
+I1[0] => Selector3.IN5
+I1[1] => Selector2.IN5
+I1[2] => Selector1.IN5
+I1[3] => Selector0.IN5
+Y[0] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2
+reset => RegN:stage0.reset
+start => RegN:stage0.load
+clk => ~NO_FANOUT~
+Cin => RCA:stage2.B
+Seg[0] <= BCD_Decode:stage1.F[0]
+Seg[1] <= BCD_Decode:stage1.F[1]
+Seg[2] <= BCD_Decode:stage1.F[2]
+Seg[3] <= BCD_Decode:stage1.F[3]
+Seg[4] <= BCD_Decode:stage1.F[4]
+Seg[5] <= BCD_Decode:stage1.F[5]
+Seg[6] <= BCD_Decode:stage1.F[6]
+Detect <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|RegN:stage0
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|BCD_Decode:stage1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN0
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[0] => F.IN1
+I[1] => F.IN1
+I[1] => F.IN0
+I[1] => F.IN0
+I[1] => F.IN0
+I[1] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN1
+I[2] => F.IN0
+I[3] => F.IN1
+F[0] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[6] <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|RCA:stage2
+A[0] => HA:stage0.A
+A[1] => HA:stage1.A
+A[2] => HA:stage2.A
+A[3] => HA:stage3.A
+B => HA:stage0.B
+Sum[0] <= HA:stage0.Sum
+Sum[1] <= HA:stage1.Sum
+Sum[2] <= HA:stage2.Sum
+Sum[3] <= HA:stage3.Sum
+
+
+|Stopwatch|Digit:stage2|RCA:stage2|HA:stage0
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|RCA:stage2|HA:stage1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|RCA:stage2|HA:stage2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|RCA:stage2|HA:stage3
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|Digit:stage2|MUX2to1:stage3
+S => Selector0.IN3
+S => Selector1.IN3
+S => Selector2.IN3
+S => Selector3.IN3
+S => Selector0.IN1
+S => Selector1.IN1
+S => Selector2.IN1
+S => Selector3.IN1
+I0[0] => Selector3.IN4
+I0[1] => Selector2.IN4
+I0[2] => Selector1.IN4
+I0[3] => Selector0.IN4
+I1[0] => Selector3.IN5
+I1[1] => Selector2.IN5
+I1[2] => Selector1.IN5
+I1[3] => Selector0.IN5
+Y[0] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
