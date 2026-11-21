@@ -49,5 +49,5 @@ begin
 	Detect <= Detects;
 	
 	stage2: RCA port map(Q, Cin, Sum);
-	stage3: MUX2to1 port map(Detects, Sum, "0000" D);
+	stage3: MUX2to1 port map(Detects, Sum, "0000", D);
 end architecture;
